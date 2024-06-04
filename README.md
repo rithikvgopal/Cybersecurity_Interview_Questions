@@ -5,8 +5,8 @@ Sharing this with you as you guys can prepare and excel the interview.
 All the best to everyone!!!
 
 ### [1. How do you configure rules within a SIEM to identify potential security incidents? Please provide an example.](#Answer_1)
-### [Describe a situation where you had to fine-tune an alert to reduce false positives. What steps did you take?](#Answer_2)
-]
+### [2. Describe a situation where you had to fine-tune an alert to reduce false positives. What steps did you take?](#Answer_2)
+
 
 ### Answer_1
 
