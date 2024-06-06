@@ -6,6 +6,7 @@ All the best to everyone!!!
 
 ### [1. How do you configure rules within a SIEM to identify potential security incidents? Please provide an example.](#Answer_1)
 ### [2. Describe a situation where you had to fine-tune an alert to reduce false positives. What steps did you take?](#Answer_2)
+### [3. Walk me through the incident response process you followed for a specific security incident at a previous job. What tools did you use?](#Answer_3)
 
 
 ### Answer_1
@@ -34,5 +35,38 @@ Result - I monitored the alert for two weeks and conducted regular meeting with 
 
 
 ### Answer_3
+
+Situation - In my previous role as a cybersecurity analyst, we came across a situation where one user reported suspicious activities in their account, which led us to discover malware infection in a few of the endpoints. The malware appears to be designed to perform data exfiltration. 
+
+Task - My task was to support the incident response team in analyzing the malware and performing the mitigation steps to prevent the spread of the malware. 
+
+Action - We followed the NIST incident response framework, which has steps: Preparation, Identification, containment, eradication, recovery, and lessons learned. 
+
+  Preparation 
+  - It was ensured the incident response team had up-to-date contact information and clearly defined roles.
+  - Verified the required resources were available and working properly for use.
+ Identification
+  - Using the SIEM(Splunk) to analyze the logs to correlate the events with the reported suspicious activities.
+  - Employing the EDR(crowdstrike) to scan the endpoints to identify the presence of malware in them.
+  - Verifying the indicators of compromise(IOCs) such as unusual network traffic, unauthorized access, etc.
+ Containment
+  - Isolating the affected devices from the network to avoid the spreading of malware.
+  - Creating network segmentations to avoid the spread of malware.
+  - Blocking malicious IP addresses and domains at the firewall and proxy levels.
+ Eradication
+  - Performing a forensic analysis using tools such as Encase to understand the scope of the infection and the affected files from the malware.
+  - Removing the malware with the help of anti-virus and anti-malware tools such as Malwarebytes. 
+  - Updating the system and performing patches to secure if the malware had exploited vulnerabilities.
+ Recovery
+  - Recovering the system from clean backups to ensure there is no malware residue.
+  - Closely monitoring the system to check if there are any signs of re-infection.
+  - Communicate with the users to reset their credentials and improve their security awareness.
+ Lessons learned
+  - Conducted a post-review of the incident to discuss what went well and what should be improved.
+  - Documented the incident and the response actions taken to update the response plan.
+  - Providing additional training to associates to identify phishing attacks etc in the first place.
+
+Results - The security incident was swiftly tackled by the incident response team and the other teams associated such as SOC, email gateway, network, etc. The malware was contained and eradicated, and no data was exfiltrated. The affected devices were restored with minimal downtime and the lessons learned were used to enhance the incident response plan and the security posture.  
+ 
 ### Answer_4
 ### Answer_5
